@@ -1,0 +1,40 @@
+Queue:
+1. data structure: normal queue (insertion at last, deletion from first)
+
+Methods:
+1. add(), offer(): at at last
+2. element(), peek(): get first element
+3. remove(), poll(): remove first element
+
+classes:
+1. PriorityQueue(C)
+2. Deque(I)
+
+1. data structure: priority queue
+2. in this queue each element is associated with a priority value, and
+     element with the highest priority will remove first.
+Constructor:
+1. new PriorityQueue<>();
+2. new PriorityQueue(Comparator c): Type of element added in queue, must be comparable.
+
+Deque:
+1. data structure: doubly ended queue (insertion and deletion at both end)
+2. Can be used a stack (recommended for stack)
+
+Methods:
+1. addFirst(), offerFirst()
+2. addLast(), offerLast()
+3. getFirst(), peekFirst()
+4. getLast(), peekLast()
+5. removeFirst(), pollFirst()
+6. removeLast(), pollLast()
+
+classes:
+1. ArrayDeque: doubly ended queue implemented as array
+    Normal queue:
+        Queue<Integer> queue = new ArrayDeque<>();
+    Stack and doubly ended queue:
+        Deque<Integer> stack = new ArrayDeque<>();
+2. LinkedList: doubly ended queue implemented as Linked List
+
+

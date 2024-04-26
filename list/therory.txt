@@ -1,0 +1,75 @@
+List(I):
+1. maintain the order of insertion.
+2. contains duplicate
+3. Each element is position based, starting from index 0.
+
+Methods:
+1. get(index)
+2. set(index, element)
+3. add(index, element)
+4. remove(index)
+
+Iterator:
+List ll = [10, 20, 30, 40, 50]
+ListIterator<Integer> li = ll.listIterator();
+while (li.hasNext()) {
+  System.out.print(li.next() + ", ");
+} // [10, 20, 30, 40, 50]
+System.out.println();
+while (li.hasPrevious()) {
+  System.out.print(li.previous() + ", ");
+} // [50, 40, 30, 20, 10]
+
+Classes:
+1. ArrayList
+2. Vector
+3. LinkedList
+4. Stack
+
+ArrayList:
+1. data structure:  dynamic array
+2. new_capacity = old_capacity + (old_capacity/2) => 10 + 10/2 = 15
+3. use if frequent operation is searching
+
+Constructor:
+1. new ArrayList<Type>() (default size 10)
+2. new ArrayList<Type>(50);
+3. new ArrayList<Type>(Collection c)
+**********************************  ArrayList End ***************************
+
+Vector:
+1. data structure: dynamic array
+2. it is a legacy class
+3. providing fast random access
+4. thread safe
+5. vector suffers a slight performance penalty over array list because of synchronization
+**************************** Vector End ***************************
+
+LinkedList:
+1. data structure: doubly linked list
+2. insertion and deletion in a doubly linked list is very efficient
+
+Constructor:
+1. new LinkedList();
+2. new LinkedList(c);
+3. Because its implement doubly linked list so constructor with size does not exist
+
+ArrayList vs LinkedList:
+1. ArrayList has position based access that has constant time performance, Linked list also has a position
+   based access but has linear time performance because, need traversal through list to get the position.
+2. when ever frequent insertion and deletion inside a list a linked list will be better over arraylist.
+3. In addition to the List interface LinkedList class also implements Dequeue.
+************************ Linked List End **********************************
+
+stack:
+1. data structure: stack, Last in first out (LIFO)
+2. Use Deque interface implementation ArrayDeque is recommended for stack
+
+Constructor:
+1. new Stack()
+
+Methods:
+1. push() -> add top of the stack
+2. peek() -> get from top of the stack
+3. pop() -> remove from top of the stack
+******************************* Stack End *******************

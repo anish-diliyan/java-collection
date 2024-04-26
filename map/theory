@@ -1,0 +1,24 @@
+Map:
+1. key value pair
+
+classes:
+1. HashMap
+2. HashMap -> LinkedHashMap --> insertion order preserved
+3. SortedMap --> TreeMap ---> sorted by keys
+
+Methods:
+1. put(key, value): add key value to the map
+2. put(key, value): update value of the key same as method 1
+3. remove(key): it will remove if found, if not found does not throw exception
+4. remove(key, value): it will remove if both key value matches does not throw exception
+5. get(key): return value for key, if key not found return null
+6. getOrDefault(key, default value)
+7. containsKey()
+8. containsValue()
+9. size()
+
+Iteration:
+1. map can not be traversed using Iterator so use the following
+2. entrySet()
+3. keySet()
+4. values()

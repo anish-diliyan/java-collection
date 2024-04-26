@@ -1,0 +1,19 @@
+Set(I):
+does not contains duplicate, but HOW????
+step 1:-- calculate hashCode of object to decide the bucket in hash table.
+step 2:-- find duplicate object inside bucket using equals() method.
+
+Note: Object class hashcode and equals implementation.
+hashCode:-- on basis of address of object
+equals:-- check reference of object
+
+Methods:
+1. s1.addAll(s2) -> union
+2. s1.removeAll(s2) -> difference
+3. s1.retainAll(s2) -> intersection
+4. s1.containsAll(s2) -> subset
+
+Classes:
+1. HashSet -> insertion order not preserved
+2. HashSet -> LinkedHashSet -> preserved insertion order via linked list
+3. SortedSet -> NavigableSet -> TreeSet --> element is sorted
